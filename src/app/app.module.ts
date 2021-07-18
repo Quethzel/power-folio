@@ -8,10 +8,12 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import {MatSelectModule} from '@angular/material/select'; // not used
+import { ToolbarComponent } from './core/toolbar/toolbar.component';
+import { MatMenuModule } from '@angular/material/menu';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ToolbarComponent
   ],
   imports: [
     BrowserModule,
@@ -21,7 +23,7 @@ import {MatSelectModule} from '@angular/material/select'; // not used
     MatIconModule,
     MatButtonModule,
     MatSidenavModule,
-    MatSelectModule
+    MatMenuModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

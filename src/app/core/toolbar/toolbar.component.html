@@ -1,0 +1,24 @@
+<mat-toolbar>
+    <button mat-icon-button class="sidenav-btn"
+        (click)="sidenavToggle.emit()">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <button mat-icon-button class="home-btn">Q</button>
+    <button class="toolbar-btn" mat-button>About</button>
+    <button class="toolbar-btn" mat-button>Experience</button>
+    <button class="toolbar-btn" mat-button>Projects</button>
+    <button class="toolbar-btn" mat-button>Contact</button>
+
+    <span class="spacer"></span>
+    
+    <button mat-icon-button (click)="themeToggle()">
+        <mat-icon >{{ isDarkTheme ? 'dark_mode' : 'light_mode'}}</mat-icon>
+    </button>
+    <button mat-icon-button [matMenuTriggerFor]="beforeMenu">
+        <mat-icon>language</mat-icon>
+    </button>
+    <mat-menu #beforeMenu="matMenu" xPosition="before">
+    <button mat-menu-item>ENG</button>
+    <button mat-menu-item>ESP</button>
+</mat-menu>
+</mat-toolbar>

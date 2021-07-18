@@ -1,31 +1,24 @@
 <div class="container">
-<mat-toolbar>
-    <button mat-icon-button class="example-icon" (click)="sidenav.toggle()">
-        <mat-icon>menu</mat-icon>
-    </button>
-    <span class="example-spacer"></span>
-    <button mat-button>About</button>
-    <button mat-button>Experience</button>
-    <button mat-button>Projects</button>
-    <button mat-button>Contact</button>
-</mat-toolbar>
 
-<mat-sidenav-container class="container sidenav" hasBackdrop="true">
-    <mat-sidenav #sidenav mode="over" class="menu-container">
-        <div class="container menu">
-            <ul>
-                <li><a href="#" mat-button>About</a></li>
-                <li><a href="#" mat-button>Experience</a></li>
-                <li><a href="#" mat-button>Projects</a></li>
-                <li><a href="#" mat-button>Contact</a></li>
-            </ul>
-        </div>
-    </mat-sidenav>
+    <app-toolbar (sidenavToggle)="sidenav.toggle()"></app-toolbar>
 
-    <mat-sidenav-content>
-        content here...
-    </mat-sidenav-content>
-</mat-sidenav-container>
+    <mat-sidenav-container class="container sidenav" hasBackdrop="true">
+        <mat-sidenav #sidenav mode="over" class="menu-container"
+            (toggleSidenav)="sidenav.toggle()">
+            <div class="container menu">
+                <ul>
+                    <li><a href="#" mat-button>About</a></li>
+                    <li><a href="#" mat-button>Experience</a></li>
+                    <li><a href="#" mat-button>Projects</a></li>
+                    <li><a href="#" mat-button>Contact</a></li>
+                </ul>
+            </div>
+        </mat-sidenav>
+
+        <mat-sidenav-content>
+            content here...
+        </mat-sidenav-content>
+    </mat-sidenav-container>
 
 
 </div>
