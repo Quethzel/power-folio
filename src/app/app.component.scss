@@ -1,0 +1,14 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.example-container {
+    margin: 12px;
+    border: 1px solid #555;
+  }
+  
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
