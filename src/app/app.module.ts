@@ -10,10 +10,16 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { ToolbarComponent } from './core/toolbar/toolbar.component';
 import { MatMenuModule } from '@angular/material/menu';
+import { AboutMeComponent } from './page-components/about-me/about-me.component';
+import { ContactComponent } from './page-components/contact/contact.component';
+import { HeroComponent } from './page-components/hero/hero.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    AboutMeComponent,
+    ContactComponent,
+    HeroComponent
   ],
   imports: [
     BrowserModule,
