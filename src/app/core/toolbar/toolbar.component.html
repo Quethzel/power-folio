@@ -3,7 +3,7 @@
         (click)="sidenavToggle.emit()">
         <mat-icon>menu</mat-icon>
     </button>
-    <button mat-icon-button class="home-btn">Q</button>
+    <a #home mat-icon-button class="home-btn">Q</a>
     <button class="toolbar-btn" mat-button>About</button>
     <button class="toolbar-btn" mat-button>Experience</button>
     <button class="toolbar-btn" mat-button>Projects</button>
@@ -12,7 +12,7 @@
     <span class="spacer"></span>
     
     <button mat-icon-button (click)="themeToggle()">
-        <mat-icon >{{ isDarkTheme ? 'dark_mode' : 'light_mode'}}</mat-icon>
+        <mat-icon >{{ isDarkTheme ? 'light_mode' : 'dark_mode'}}</mat-icon>
     </button>
     <button mat-icon-button [matMenuTriggerFor]="beforeMenu">
         <mat-icon>language</mat-icon>

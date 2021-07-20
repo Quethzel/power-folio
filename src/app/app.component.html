@@ -1,13 +1,15 @@
 <div class="container">
-
-    <app-toolbar (sidenavToggle)="sidenav.toggle()"></app-toolbar>
+    <app-toolbar [isDarkTheme]="isDarkMode" 
+        (sidenavToggle)="sidenav.toggle()" 
+        (changeTheme)="onChangeTheme($event)">
+    </app-toolbar>
 
     <mat-sidenav-container class="container sidenav" hasBackdrop="true">
         <mat-sidenav #sidenav mode="over" class="menu-container"
             (toggleSidenav)="sidenav.toggle()">
             <div class="container menu">
                 <ul>
-                    <li><a href="#" mat-button>About</a></li>
+                    <li><a href="#about" mat-button>About</a></li>
                     <li><a href="#" mat-button>Experience</a></li>
                     <li><a href="#" mat-button>Projects</a></li>
                     <li><a href="#" mat-button>Contact</a></li>
@@ -16,9 +18,9 @@
         </mat-sidenav>
 
         <mat-sidenav-content class="container content">
-            <app-hero></app-hero>
+            <app-hero #home></app-hero>
 
-            <app-about-me></app-about-me>
+            <app-about-me id="about"></app-about-me>
 
         </mat-sidenav-content>
     </mat-sidenav-container>
