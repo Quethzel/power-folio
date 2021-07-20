@@ -16,5 +16,4 @@ export class ToolbarComponent {
     this.isDarkTheme = !this.isDarkTheme;
     this.changeTheme.next(this.isDarkTheme);
   }
-
 }

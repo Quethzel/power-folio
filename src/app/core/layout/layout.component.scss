@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.menu-container {
+    width: 70%;
+}
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin: 20px 10px;
+    padding: 10px;
+}
+.menu ul li {
+    margin: 10px 0;
+}
+
+.menu ul li a {
+    display: inherit;
+}
+.content {
+    padding: 0 25px;
+}
