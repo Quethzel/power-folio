@@ -13,6 +13,7 @@ import { AboutMeComponent } from './page-components/about-me/about-me.component'
 import { ContactComponent } from './page-components/contact/contact.component';
 import { HeroComponent } from './page-components/hero/hero.component';
 import { LayoutComponent } from './core/layout/layout.component';
+import { GoogleMapsModule } from '@angular/google-maps';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,6 +27,7 @@ import { LayoutComponent } from './core/layout/layout.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    GoogleMapsModule,
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,

@@ -1,1 +1,14 @@
-<p>contact works!</p>
+<section class="section">
+    <google-map
+        height="100%"
+        [center]="center"
+        [options]="options">
+        <map-marker
+            *ngFor="let marker of markers"
+            [position]="marker.position"
+            [label]="marker.label"
+            [title]="marker.title"
+            [options]="marker.options"
+        ></map-marker>
+    </google-map>
+</section>
