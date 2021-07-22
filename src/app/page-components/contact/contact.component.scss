@@ -1,5 +1,55 @@
 .section {
     display: flex;
     min-height: 100vh;
-    // border: 2px dotted red;
+    border: 2px dotted red;
+}
+
+.contact {
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    display: flex;
+    width: 100;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+.column {
+    // border:1px dotted blue;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    justify-content: center;
+}
+
+.ctn-center {
+    align-items: center;
+}
+
+.map-container {
+    height: 100vh;
+    // width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .section {
+        min-height: auto;
+    }
+    .column {
+        width: 100%;
+        flex: auto;
+    }
+    .map-container {
+        height: 500px;
+    }
+    
 }

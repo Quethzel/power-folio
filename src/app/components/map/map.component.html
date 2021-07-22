@@ -1,0 +1,37 @@
+<div class="wrapper">
+<div id="map">
+
+<google-map height="100%" width="100%"
+    [center]="center"
+    [options]="options"
+    (mapClick)="onMapClick()"
+    >
+    <map-marker #marker="mapMarker" *ngFor="let markerPosition of markerPositions"
+        [position]="markerPosition"
+        (mapClick)="openInfoWindow(marker)">
+    </map-marker>
+    <map-info-window>
+        <div class="info-win">
+            <h3>Quethzel Diaz</h3>
+            <ul>
+                <li>Monterrey NL. México</li>
+                <li>quethzel@gmail.com</li>
+            </ul>
+            <span>Last update 7/22/2021 11:30</span>
+        </div>
+    </map-info-window>
+</google-map>
+
+<div class="content">
+    <div class="info-win">
+        <h3>Quethzel Diaz</h3>
+        <ul>
+            <li>Monterrey NL. México</li>
+            <li>quethzel@gmail.com</li>
+        </ul>
+        <span>Last update 7/22/2021 11:30</span>
+    </div>
+</div>
+
+</div>
+</div>

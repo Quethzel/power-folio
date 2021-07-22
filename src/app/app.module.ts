@@ -14,6 +14,7 @@ import { ContactComponent } from './page-components/contact/contact.component';
 import { HeroComponent } from './page-components/hero/hero.component';
 import { LayoutComponent } from './core/layout/layout.component';
 import { GoogleMapsModule } from '@angular/google-maps';
+import { MapComponent } from './components/map/map.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,8 @@ import { GoogleMapsModule } from '@angular/google-maps';
     AboutMeComponent,
     ContactComponent,
     HeroComponent,
-    LayoutComponent
+    LayoutComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
