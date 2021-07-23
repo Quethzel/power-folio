@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MapInfoWindow, MapMarker } from '@angular/google-maps';
-
+import * as darkTheme from '../../../assets/google-maps-themes/dark-theme.json';
+import * as silverTheme from '../../../assets/google-maps-themes/silver-theme.json';
 @Component({
   selector: 'app-map',
   templateUrl: './map.component.html',
@@ -15,7 +16,7 @@ export class MapComponent implements OnInit {
   options: google.maps.MapOptions = {
     mapTypeId: 'roadmap',
     zoomControl: false,
-    scrollwheel: true,
+    scrollwheel: false,
     disableDoubleClickZoom: true,
     disableDefaultUI: true,
     zoom: 5,
@@ -26,6 +27,9 @@ export class MapComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    const defaultTheme: any[] = darkTheme;
+    this.options.styles = defaultTheme;
+
     this.addMarker();
   }
 
