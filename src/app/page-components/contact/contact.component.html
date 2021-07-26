@@ -2,7 +2,20 @@
     <h2 class="title">Contact</h2>
     <div class="row">
         <div class="column ctn-center">
-            <p>contact info will be here...</p>
+            <h1>You can get in touch with me through</h1>
+            <p>
+                <a class="email" ngxClipboard [cbContent]="'quethzel@gmail.com'">
+                    quethzel@gmail.com
+                    <fa-icon [icon]="['far', 'copy']" class="copy"></fa-icon>
+                </a>
+            </p>
+            <ul class="social-media">
+                <li><a href="https://stackoverflow.com/users/story/3232586" target="_blank"><fa-icon [icon]="faStackOverflow" size="2x"></fa-icon></a></li>
+                <li><a href="https://github.com/Quethzel" target="_blank"><fa-icon [icon]="faGithub" size="2x"></fa-icon></a></li>
+                <li><a href="https://www.linkedin.com/in/quethzel/?locale=en_US" target="_blank"><fa-icon [icon]="faLinkedin" size="2x"></fa-icon></a></li>
+                <li><a href="https://www.instagram.com/quethzel/" target="_blank"><fa-icon [icon]="faInstagram" size="2x"></fa-icon></a></li>
+            </ul>
+
         </div>
         <div class="column">
             <div class="map-container">

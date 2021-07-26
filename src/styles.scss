@@ -55,3 +55,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .theme-dark {
   @include mat.all-component-themes($power-folio-theme-dark);
 }
+
+
+a {
+  text-decoration: none;
+}

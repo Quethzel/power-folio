@@ -15,6 +15,10 @@ import { HeroComponent } from './page-components/hero/hero.component';
 import { LayoutComponent } from './core/layout/layout.component';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { MapComponent } from './components/map/map.component';
+import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
+import { ClipboardModule } from 'ngx-clipboard';
+import { far } from '@fortawesome/free-regular-svg-icons';
+import { fas } from '@fortawesome/free-solid-svg-icons';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,8 +39,14 @@ import { MapComponent } from './components/map/map.component';
     MatButtonModule,
     MatSidenavModule,
     MatMenuModule,
+    FontAwesomeModule,
+    ClipboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(library: FaIconLibrary) {
+    library.addIconPacks(fas, far);
+  }
+}

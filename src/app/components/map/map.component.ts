@@ -27,7 +27,7 @@ export class MapComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    const defaultTheme: any[] = darkTheme;
+    const defaultTheme: any[] = silverTheme;
     this.options.styles = defaultTheme;
 
     this.addMarker();
