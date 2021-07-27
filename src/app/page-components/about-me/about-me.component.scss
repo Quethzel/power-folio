@@ -1,0 +1,50 @@
+.section {
+    display: flex;
+    min-height: 100vh;
+}
+
+img {
+    border-radius: 10px;
+}
+
+p {
+    padding-top: 10px;
+    font-size: 16px;
+    max-width: 550px;
+}
+
+.about-me {
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    display: flex;
+    width: 100;
+}
+
+.skill-list {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 180px));
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    justify-content: center;
+}
+
+.ctn-center {
+    align-items: center;
+}
