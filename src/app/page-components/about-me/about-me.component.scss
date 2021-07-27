@@ -1,7 +1,10 @@
 .section {
     display: flex;
     min-height: 100vh;
-    // border: 2px dotted red;
+}
+
+img {
+    border-radius: 10px;
 }
 
 p {
@@ -35,7 +38,6 @@ p {
   }
 
 .column {
-    // border:1px dotted blue;
     display: flex;
     flex-direction: column;
     flex-basis: 100%;

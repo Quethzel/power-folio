@@ -8,10 +8,9 @@ import * as silverTheme from '../../../assets/google-maps-themes/silver-theme.js
   styleUrls: ['./map.component.scss']
 })
 export class MapComponent implements OnInit {
-  // @ViewChild(MapInfoWindow) infoWindow!: MapInfoWindow;
   @ViewChild(MapInfoWindow, { static: false }) infoWindow!: MapInfoWindow
 
-  center: google.maps.LatLngLiteral = { lat: 51.36366938589878, lng: 22.548670637589957 };
+  center: google.maps.LatLngLiteral = { lat: 53.34493282706019, lng: -6.267533876858588 };
   markerPositions: google.maps.LatLngLiteral[] = [];
   options: google.maps.MapOptions = {
     mapTypeId: 'roadmap',
@@ -19,7 +18,7 @@ export class MapComponent implements OnInit {
     scrollwheel: false,
     disableDoubleClickZoom: true,
     disableDefaultUI: true,
-    zoom: 5,
+    zoom: 7,
     minZoom: 5,
     maxZoom: 11,
   }

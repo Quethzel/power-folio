@@ -1,7 +1,6 @@
 .section {
     display: flex;
     min-height: 100vh;
-    border: 2px dotted red;
 }
 
 .contact {
@@ -23,7 +22,6 @@
   }
 
 .column {
-    // border:1px dotted blue;
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
@@ -37,7 +35,6 @@
 
 .map-container {
     height: 100vh;
-    // width: 100%;
 }
 
 p {
