@@ -27,3 +27,19 @@
 .content {
     padding: 0 25px;
 }
+
+.social-media {
+    margin: 10px 0;
+    padding: 0;
+}
+.social-media li {
+    list-style: none;
+    display: inline;
+    margin: 10px;
+}
+.social-media li a {
+    color: #777;
+}
+.social-media li a:hover {
+    color: #000;
+}

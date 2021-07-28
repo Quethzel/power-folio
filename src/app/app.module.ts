@@ -16,9 +16,13 @@ import { LayoutComponent } from './core/layout/layout.component';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { MapComponent } from './components/map/map.component';
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatTabsModule } from '@angular/material/tabs';
 import { ClipboardModule } from 'ngx-clipboard';
 import { far } from '@fortawesome/free-regular-svg-icons';
 import { fas } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faInstagram, faStackOverflow, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { ExperienceComponent } from './page-components/experience/experience.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +31,8 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
     ContactComponent,
     HeroComponent,
     LayoutComponent,
-    MapComponent
+    MapComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,
@@ -39,6 +44,8 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
     MatButtonModule,
     MatSidenavModule,
     MatMenuModule,
+    MatSnackBarModule,
+    MatTabsModule,
     FontAwesomeModule,
     ClipboardModule
   ],
@@ -48,5 +55,6 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 export class AppModule {
   constructor(library: FaIconLibrary) {
     library.addIconPacks(fas, far);
+    library.addIcons(faStackOverflow, faGithub, faLinkedinIn, faInstagram);
   }
 }

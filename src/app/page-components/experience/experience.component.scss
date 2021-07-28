@@ -1,0 +1,18 @@
+.section {
+    display: flex;
+    min-height: 100vh;
+    border: 1px dotted #000;
+}
+
+.experience {
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    display: flex;
+}
+
+.row {
+    width: 100%;
+}
