@@ -1,7 +1,6 @@
 .section {
     display: flex;
     min-height: 100vh;
-    border: 1px dotted #000;
 }
 
 .experience {
@@ -15,4 +14,12 @@
 
 .row {
     width: 100%;
+}
+
+@media only screen and (min-width: 1024px) {
+    mat-tab-group {
+        flex-basis: 100%;
+        flex: 1;
+        align-items: center;
+    }
 }

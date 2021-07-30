@@ -18,11 +18,13 @@ import { MapComponent } from './components/map/map.component';
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatChipsModule } from '@angular/material/chips';
 import { ClipboardModule } from 'ngx-clipboard';
 import { far } from '@fortawesome/free-regular-svg-icons';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faInstagram, faStackOverflow, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { ExperienceComponent } from './page-components/experience/experience.component';
+import { ExperienceInfoComponent } from './components/experience-info/experience-info.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +34,8 @@ import { ExperienceComponent } from './page-components/experience/experience.com
     HeroComponent,
     LayoutComponent,
     MapComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    ExperienceInfoComponent
   ],
   imports: [
     BrowserModule,
@@ -46,6 +49,7 @@ import { ExperienceComponent } from './page-components/experience/experience.com
     MatMenuModule,
     MatSnackBarModule,
     MatTabsModule,
+    MatChipsModule,
     FontAwesomeModule,
     ClipboardModule
   ],
