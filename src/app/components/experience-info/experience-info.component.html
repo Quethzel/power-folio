@@ -1,25 +1,15 @@
 <div class="info-container">
-    <h1>Sr. Full-Stack Developer Enterprice</h1>
-    <span>Mar 2019 - Present</span>
+    <h1>{{work.role}}</h1>
+    <span>{{work.startDate}} - {{work.endDate}}</span>
     <ul>
-        <li>Develop new custom web applications that interact with Dynamics 365</li>
-        <li>I worked closely with the Bussines Analyses and the Product Owner 
-            to develop a custom app that has embed into CRM.
+        <li *ngFor="let responsability of work.responsabilities">
+            {{responsability.description}}
         </li>
-        <li>
-            Architected and implemented front-end app to do operate process with CRM 
-            using the Dynamics XRM Web API and some custom APIs.
-        </li>
-        <li>Build custom APIs using Microsoft Dataverse WEB API</li>
     </ul>
-    <mat-chip-list aria-label="Fish selection">
-        <mat-chip>Angular</mat-chip>
-        <mat-chip>Net Framework</mat-chip>
-        <mat-chip>AG Grid</mat-chip>
-        <mat-chip color="primary" selected>Azure DevOps</mat-chip>
-        <mat-chip color="accent" selected>Azure Congnitive Services</mat-chip>
-        <mat-chip color="accent" selected>Git</mat-chip>
-        <mat-chip color="secondary" selected>Net Core</mat-chip>
-        <mat-chip color="secondary" selected>SQL Server</mat-chip>
-      </mat-chip-list>
+    <mat-chip-list>
+        <mat-chip *ngFor="let tech of work.stack"
+            [color]="tech.isMain ? 'primary' : 'secondary'" selected>
+            {{tech.technology}}
+        </mat-chip>
+    </mat-chip-list>
 </div>
