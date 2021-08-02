@@ -1,6 +1,6 @@
 <div class="info-container">
     <h1>{{work.role}}</h1>
-    <span>{{work.startDate}} - {{work.endDate}}</span>
+    <span>{{formatDate(work.startDate)}} - {{work.endDate != null ? formatDate(work.endDate) : 'Present'}}</span>
     <ul>
         <li *ngFor="let responsability of work.responsabilities">
             {{responsability.description}}

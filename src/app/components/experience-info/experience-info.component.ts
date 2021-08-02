@@ -13,4 +13,11 @@ export class ExperienceInfoComponent implements OnInit {
 
   ngOnInit(): void { }
 
+  formatDate(date: Date) {
+    const locale = 'en-US'
+    return date instanceof Date
+      ? date.toLocaleDateString(locale, {year: 'numeric', month: 'short'})
+      : null;
+  }
+
 }
