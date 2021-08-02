@@ -1,4 +1,6 @@
 import { Component, HostBinding } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { CredtisComponent } from 'src/app/components/credtis/credtis.component';
 
 @Component({
   selector: 'app-layout',
@@ -8,7 +10,7 @@ import { Component, HostBinding } from '@angular/core';
 export class LayoutComponent {
   isDarkMode: boolean;
 
-  constructor() {
+  constructor(public dialog: MatDialog) {
     this.isDarkMode = this.isNightTime();
   }
 
@@ -19,6 +21,11 @@ export class LayoutComponent {
 
   onChangeTheme(isDarkTheme: boolean) {
     this.isDarkMode = isDarkTheme;
+  }
+
+  credits($event: any) {
+    $event.preventDefault();
+    this.dialog.open(CredtisComponent);
   }
   
   private isNightTime() {

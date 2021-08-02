@@ -19,12 +19,14 @@ import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontaweso
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatChipsModule } from '@angular/material/chips';
+import { MatDialogModule } from '@angular/material/dialog';
 import { ClipboardModule } from 'ngx-clipboard';
 import { far } from '@fortawesome/free-regular-svg-icons';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faInstagram, faStackOverflow, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { ExperienceComponent } from './page-components/experience/experience.component';
 import { ExperienceInfoComponent } from './components/experience-info/experience-info.component';
+import { CredtisComponent } from './components/credtis/credtis.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +37,8 @@ import { ExperienceInfoComponent } from './components/experience-info/experience
     LayoutComponent,
     MapComponent,
     ExperienceComponent,
-    ExperienceInfoComponent
+    ExperienceInfoComponent,
+    CredtisComponent
   ],
   imports: [
     BrowserModule,
@@ -50,11 +53,15 @@ import { ExperienceInfoComponent } from './components/experience-info/experience
     MatSnackBarModule,
     MatTabsModule,
     MatChipsModule,
+    MatDialogModule,
     FontAwesomeModule,
     ClipboardModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [
+    CredtisComponent
+  ]
 })
 export class AppModule {
   constructor(library: FaIconLibrary) {
