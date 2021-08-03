@@ -13,7 +13,7 @@ export class ProfileService {
       {
         company: 'Bray Inc.',
         role: 'Sr. Full Stack Developer Enterprise',
-        startDate: new Date(2019,3,11),
+        startDate: new Date(2019,2,12),
         endDate: null,
         responsabilities: [
           { description: 'Develop new custom web applications that interact with Dynamics 365' },
@@ -35,34 +35,39 @@ export class ProfileService {
       },
       {
         company: 'Neoris',
-        role: 'Sr. Full Stack Developer',
-        startDate: new Date(2018, 3, 10),
-        endDate: new Date(2019, 3, 13),
+        role: 'Sr. Full Stack Engineer',
+        startDate: new Date(2017, 8, 1),
+        endDate: new Date(2019, 2, 10),
         responsabilities: [
-          { description: 'Develop new custom web applications that interact with Dynamics 365' },
-          { description: 'I worked closely with the Bussines Analyses and the Product Owner to develop a custom app that has embed into CRM.' },
-          { description: 'Architected and implemented front-end app to do operate process with CRM using the Dynamics XRM Web API and some custom APIs.' },
-          { description: 'Build custom APIs using Microsoft Dataverse WEB API' },
-          { description: 'Fix issue in production' }
+          { description: 'Adding new features to existing projects and develop new apps from scratch for diverse array of clients' },
+          { description: 'Lead a front-end team' },
+          { description: 'Comunicate closely with designers, mobile enginirees and product owner' },
+          { description: 'Build custom front end experiences using HTML Canvas and Kendo UI' },
+          { description: 'External consultor for companies like Home Depot, FEMSA and ARCA providing technological expertise' }
         ],
         stack: [
-          { technology: 'Angular', isMain: true },
-          { technology: 'Azure DevOps', isMain: true },
-          { technology: 'Net Core', isMain: false },
+          { technology: 'Angular Js', isMain: true },
+          { technology: 'Kendo UI', isMain: true },
+          { technology: 'Net Framework', isMain: false },
           { technology: 'Git', isMain: true },
-          { technology: 'SQL Server', isMain: false }
+          { technology: 'SQL Server', isMain: false },
+          { technology: 'Lead', isMain: true },
+          { technology: 'Problem solving', isMain: true }
         ]
       },
       {
         company: 'LIS',
-        role: 'Developer Architecht',
-        startDate: new Date(2016, 3, 11),
-        endDate: new Date(2018,3,10),
+        role: 'Full-Stack & Team Lead',
+        startDate: new Date(2014, 2, 11),
+        endDate: new Date(2017, 8, 10),
         responsabilities: [
-          { description: 'Develop new custom web applications that interact with Dynamics 365' },
-          { description: 'I worked closely with the Bussines Analyses and the Product Owner to develop a custom app that has embed into CRM.' },
-          { description: 'Architected and implemented front-end app to do operate process with CRM using the Dynamics XRM Web API and some custom APIs.' },
-          { description: 'Build custom APIs using Microsoft Dataverse WEB API' },
+          { description: 'Architect and develop new web app' },
+          { description: 'SCRUM Implementation' },
+          { description: 'Lead technical projects with a small team of developers' },
+          { description: 'Open Innovation and Developer department' },
+          { description: 'Collaborated on migration strategy from Power Builder Desktop Apps to Angular/Net Web Apps' },
+          { description: 'Implementation of Markers, Routes, Places, Directions, Roads, Distance Matrix with Google Maps API & SDK in custom app' },
+          { description: 'Support L2/L3' },
 
         ],
         stack: [
@@ -70,7 +75,9 @@ export class ProfileService {
           { technology: 'Net Framework', isMain: false },
           { technology: 'Google Maps API', isMain: true },
           { technology: 'SVN', isMain: true },
-          { technology: 'SQL Server', isMain: true }
+          { technology: 'SQL Server', isMain: true },
+          { technology: 'SCRUM', isMain: true },
+          { technology: 'Lead', isMain: true }
         ]
       },
     ];

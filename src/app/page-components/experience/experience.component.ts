@@ -15,14 +15,14 @@ export class ExperienceComponent implements OnInit {
     this.profileService.getWorkExperience().subscribe(workExp => {
       this.workExperiences = workExp;
       this.workExperiences.forEach(w => {
-        console.log(this.duration(w.startDate, w.endDate));
+        w.duration = this.duration(w.startDate, w.endDate);
       })
     });
   }
 
   ngOnInit(): void { }
 
-  duration(initDate: Date, endDate:Date | null) {
+  private duration(initDate: Date, endDate:Date | null) {
     endDate = endDate != null ? endDate : new Date();
 
     let months;
