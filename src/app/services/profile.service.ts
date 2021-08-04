@@ -30,7 +30,8 @@ export class ProfileService {
           { technology: 'Azure Cognitive Services', isMain: false },
           { technology: 'Git', isMain: true },
           { technology: 'MS CRM', isMain: true },
-          { technology: 'SQL Server', isMain: false }
+          { technology: 'SQL Server', isMain: false },
+          { technology: 'Agile', isMain: true },
         ]
       },
       {
