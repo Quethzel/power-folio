@@ -1,21 +1,21 @@
 .info-container {
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
 }
 
 ::ng-deep .mat-chip-list-wrapper {
-    margin: 10px !important;
+  margin: 10px !important;
 }
 mat-chip {
-    padding: 3px 10px;
-    font-size: 12px;
+  padding: 3px 10px;
+  font-size: 12px;
 }
 @media only screen and (max-width: 425px) {
-    .info-container {
-        padding: 30px 10px;
-    }
+  .info-container {
+    padding: 30px 10px;
+  }
 }
 span {
-    color: #777;
+  color: #777;
 }

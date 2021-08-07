@@ -1,56 +1,55 @@
 .section {
-    display: flex;
-    min-height: 100vh;
+  display: flex;
+  min-height: 100vh;
 }
 
 img {
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
 p {
-    padding-top: 10px;
-    font-size: 16px;
-    max-width: 550px;
+  padding-top: 10px;
+  max-width: 550px;
 }
 
 .about-me {
-    align-items: center;
-    flex-direction: column;
+  align-items: center;
+  flex-direction: column;
 }
 
 .title {
-    display: flex;
+  display: flex;
 }
 
 .skill-list {
-    list-style-type: none;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(auto, 180px));
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(auto, 180px));
 }
 
 .row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-around;
-  }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+}
 
 .column {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  justify-content: center;
 }
 
 .ctn-center {
-    align-items: center;
+  align-items: center;
 }
 
 @media only screen and (max-width: 425px) {
-    img {
-        width: 300px;
-        height: 300px;
-    }
+  img {
+    width: 300px;
+    height: 300px;
+  }
 }

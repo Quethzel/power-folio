@@ -5,10 +5,10 @@
     </app-toolbar>
 
     <mat-sidenav-container class="container sidenav" hasBackdrop="true">
-        <mat-sidenav #sidenav mode="over" class="menu-container"
-            (toggleSidenav)="sidenav.toggle()">
+        <mat-sidenav #sidenav mode="over" class="menu-container" (click)="sidenav.toggle()">
             <div class="container menu">
                 <ul>
+                    <li><a href="#home" mat-button>Home</a></li>
                     <li><a href="#about" mat-button>About</a></li>
                     <li><a href="#experience" mat-button>Experience</a></li>
                     <li><a href="#projects" mat-button>Projects</a></li>
