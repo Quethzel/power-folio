@@ -14,8 +14,12 @@ export class ContactComponent implements OnInit {
   copied($event: any) {
     if ($event.isSuccess) {
       this.snackBar.open(
-        'email copied to clipboard!', undefined, 
-        { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 3000 }
+        'email copied to clipboard!', 'close', 
+        { 
+          horizontalPosition: 'center',
+          verticalPosition: 'bottom', duration: 3500,
+          panelClass: ['snackbar-primary']
+        }
       );
     }
   }
