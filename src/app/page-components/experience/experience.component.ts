@@ -16,6 +16,7 @@ export class ExperienceComponent implements OnInit {
       this.workExperiences = workExp;
       this.workExperiences.forEach(w => {
         w.duration = this.duration(w.startDate, w.endDate);
+        w.stack.sort((a, b) => a.technology.length - b.technology.length);
       })
     });
   }
