@@ -11,7 +11,7 @@
     </ul>
     <mat-chip-list>
         <mat-chip *ngFor="let tech of work.stack"
-            [color]="tech.isMain ? 'primary' : 'secondary'" selected>
+            [color]="tech.softSkill ? 'primary' : 'secondary'" selected>
             {{tech.technology}}
         </mat-chip>
     </mat-chip-list>

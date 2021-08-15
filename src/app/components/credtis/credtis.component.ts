@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class CredtisComponent {
   lastUpdate: string;
   constructor() {
-    this.lastUpdate ='01.07.2021 22:30';
+    this.lastUpdate ='15.08.2021 18:22';
   }
 
 }

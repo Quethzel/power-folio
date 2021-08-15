@@ -23,15 +23,15 @@ export class ProfileService {
 
         ],
         stack: [
-          { technology: 'Angular', isMain: true },
-          { technology: 'Net Framework', isMain: false },
-          { technology: 'AG Grid', isMain: true },
-          { technology: 'Azure DevOps', isMain: true },
-          { technology: 'Azure Cognitive Services', isMain: false },
-          { technology: 'Git', isMain: true },
-          { technology: 'MS CRM', isMain: true },
-          { technology: 'SQL Server', isMain: false },
-          { technology: 'Agile', isMain: true },
+          { technology: 'Angular', softSkill: false },
+          { technology: 'Net Framework', softSkill: false },
+          { technology: 'AG Grid', softSkill: false },
+          { technology: 'Azure DevOps', softSkill: false },
+          { technology: 'Azure Cognitive Services', softSkill: false },
+          { technology: 'Git', softSkill: false },
+          { technology: 'MS CRM', softSkill: false },
+          { technology: 'SQL Server', softSkill: false },
+          { technology: 'Agile', softSkill: false },
         ]
       },
       {
@@ -47,13 +47,13 @@ export class ProfileService {
           { description: 'External consultor for companies like Home Depot, FEMSA and ARCA providing technological expertise' }
         ],
         stack: [
-          { technology: 'Angular Js', isMain: true },
-          { technology: 'Kendo UI', isMain: true },
-          { technology: 'Net Framework', isMain: false },
-          { technology: 'Git', isMain: true },
-          { technology: 'SQL Server', isMain: false },
-          { technology: 'Lead', isMain: true },
-          { technology: 'Problem solving', isMain: true }
+          { technology: 'Angular Js', softSkill: false },
+          { technology: 'Kendo UI', softSkill: false },
+          { technology: 'Net Framework', softSkill: false },
+          { technology: 'Git', softSkill: false },
+          { technology: 'SQL Server', softSkill: false },
+          { technology: 'Lead', softSkill: false },
+          { technology: 'Problem solving', softSkill: false }
         ]
       },
       {
@@ -72,13 +72,13 @@ export class ProfileService {
 
         ],
         stack: [
-          { technology: 'AngularJs', isMain: true },
-          { technology: 'Net Framework', isMain: false },
-          { technology: 'Google Maps API', isMain: true },
-          { technology: 'SVN', isMain: true },
-          { technology: 'SQL Server', isMain: true },
-          { technology: 'SCRUM', isMain: true },
-          { technology: 'Lead', isMain: true }
+          { technology: 'AngularJs', softSkill: false },
+          { technology: 'Net Framework', softSkill: false },
+          { technology: 'Google Maps API', softSkill: false },
+          { technology: 'SVN', softSkill: false },
+          { technology: 'SQL Server', softSkill: false },
+          { technology: 'SCRUM', softSkill: false },
+          { technology: 'Lead', softSkill: false }
         ]
       },
     ];
