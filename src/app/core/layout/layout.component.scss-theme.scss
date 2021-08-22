@@ -1,0 +1,23 @@
+@use 'sass:map';
+@use '~@angular/material' as mat;
+
+// $color-config:    mat.get-color-config($power-folio-theme);
+// $primary-palette: map.get($theme, 'primary');
+// $accent-palette:  map.get($color-config, 'accent');
+// $warn-palette:    map.get($color-config, 'warn');
+// $is-dark-theme:   map.get($color-config, 'is-dark');
+
+@mixin color($theme) {
+    $primary-palette: map.get($theme, 'primary');
+    .pf-footer {
+        background: #303030;
+    }
+}
+
+@mixin theme($theme) {
+    $color-config: mat.get-color-config($theme);
+
+    @if $color-config != null {
+      @include color($theme);
+    }
+}
