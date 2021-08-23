@@ -1,8 +1,5 @@
 <div class="container">
-    <app-toolbar [isDarkTheme]="isDarkMode" 
-        (sidenavToggle)="sidenav.toggle()" 
-        (changeTheme)="onChangeTheme($event)">
-    </app-toolbar>
+    <app-toolbar (sidenavToggle)="sidenav.toggle()"></app-toolbar>
 
     <mat-sidenav-container class="container sidenav" hasBackdrop="true">
         <mat-sidenav #sidenav mode="over" class="menu-container" (click)="sidenav.toggle()">

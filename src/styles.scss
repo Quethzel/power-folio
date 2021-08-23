@@ -4,6 +4,7 @@
 @use '~@angular/material' as mat;
 // Plus imports for other components in your app.
 @use './app/core/layout/layout.component.scss-theme.scss' as layout;
+@use './app//components/map/map.component.scss-theme.scss' as map;
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
 // Be sure that you only ever include this mixin once!
@@ -55,6 +56,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .theme-dark {
   @include mat.all-component-themes($power-folio-theme-dark);
   @include layout.theme($power-folio-theme-dark);
+  @include map.theme($power-folio-theme-dark);
 }
 
 

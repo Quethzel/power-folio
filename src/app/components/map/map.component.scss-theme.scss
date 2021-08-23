@@ -1,0 +1,12 @@
+@use 'sass:map';
+@use '~@angular/material' as mat;
+
+@mixin theme($theme) {
+  $color-config: mat.get-color-config($theme);
+
+  @if $color-config != null {
+    .info-win {
+      background: rgba(50, 50, 50, .9) !important;
+    }
+  }
+}
