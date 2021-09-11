@@ -21,12 +21,14 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ClipboardModule } from 'ngx-clipboard';
+import { MatCardModule } from '@angular/material/card';
 import { far } from '@fortawesome/free-regular-svg-icons';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faInstagram, faStackOverflow, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { ExperienceComponent } from './page-components/experience/experience.component';
 import { ExperienceInfoComponent } from './components/experience-info/experience-info.component';
 import { CredtisComponent } from './components/credtis/credtis.component';
+import { WhatImDoingComponent } from './components/what-im-doing/what-im-doing.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +40,8 @@ import { CredtisComponent } from './components/credtis/credtis.component';
     MapComponent,
     ExperienceComponent,
     ExperienceInfoComponent,
-    CredtisComponent
+    CredtisComponent,
+    WhatImDoingComponent
   ],
   imports: [
     BrowserModule,
@@ -54,6 +57,7 @@ import { CredtisComponent } from './components/credtis/credtis.component';
     MatTabsModule,
     MatChipsModule,
     MatDialogModule,
+    MatCardModule,
     FontAwesomeModule,
     ClipboardModule
   ],
