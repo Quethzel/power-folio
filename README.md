@@ -1,7 +1,7 @@
 # PowerFolio
 
 Powerfolio is a responsive web portfolio template, build with Angular and Angular Materials. 
-You can see a live example [here](https://quethzel.github.io/power-folio/).
+You can see a live example [here](https://quethzel.com/).
 
 ![alt text](https://github.com/quethzel/power-folio/blob/master/power-folio-responsive.png?raw=true)
 
