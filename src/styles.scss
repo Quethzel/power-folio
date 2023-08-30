@@ -37,6 +37,7 @@ $power-folio-theme-dark: mat.define-dark-theme((
   )
 ));
 
+
 // @include mat.all-component-themes($power-folio-theme);
 
 // Include theme styles for core and each component used in your app.
@@ -57,6 +58,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   @include mat.all-component-themes($power-folio-theme-dark);
   @include layout.theme($power-folio-theme-dark);
   @include map.theme($power-folio-theme-dark);
+  
+  a { color: #ee019a };
+
 }
 
 
