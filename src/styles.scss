@@ -59,16 +59,13 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   @include layout.theme($power-folio-theme-dark);
   @include map.theme($power-folio-theme-dark);
   
-  a { color: #ee019a };
+  a { color: #54FFBA };
 
 }
 
 
 a {
   text-decoration: none;
-}
-a:visited {
-  color: inherit;
 }
 
 .snackbar-primary {

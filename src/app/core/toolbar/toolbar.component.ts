@@ -24,16 +24,6 @@ export class ToolbarComponent implements OnInit {
     
   }
 
-  // onThemeChange(theme:string) {
-  //   this.themeClass = theme;
-  //   const overlayContainerClasses = this.overlayContainer.getContainerElement().classList;
-  //   const themeClassesToRemove = Array.from(overlayContainerClasses).filter((item: string) => item.includes('-theme'));
-  //   if (themeClassesToRemove.length) {
-  //      overlayContainerClasses.remove(...themeClassesToRemove);
-  //   }
-  //   overlayContainerClasses.add(theme);
-  // }
-
   themeToggle() {
     this.isDarkTheme = !this.isDarkTheme;
     this.coreService.setDarkModeTheme(this.isDarkTheme);
